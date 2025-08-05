@@ -42,6 +42,38 @@ This PAM module integrates Ironchip Multi-Factor Authentication (MFA) into the m
 
 ---
 
+### Download
+
+Download the latest Ironchip PAM module for macOS (`.so` file):
+
+<p align="left">
+  <a href="https://github.com/Ironchip-Security/Ironchip-Mac-Logon/releases/latest/download/pam_ironchip_auth.so">
+    <img alt="Download Ironchip Module" src="https://custom-icon-badges.demolab.com/badge/-Download%20Module-blue?style=for-the-badge&logo=download&logoColor=white">
+  </a>
+</p>
+
+---
+
+### Basic Usage
+
+Once you've downloaded the `.so` file:
+
+1. Move it to a secure directory:
+   ```bash
+   sudo mv pam_ironchip_auth.so /usr/local/lib/security/
+   ```
+
+2. Edit your desired PAM configuration file (e.g., `/etc/pam.d/sudo`) and add:
+   ```bash
+   auth required /usr/local/lib/security/pam_ironchip_auth.so host=https://api.ironchip.com api_key=<your_api_key>
+   ```
+
+3. Save and close the file (`Ctrl+O`, `Enter`, `Ctrl+X` if using `nano`).
+
+4. Assign access from the [Ironchip Dashboard](https://app.ironchip.com).
+
+---
+
 ## Installation & Configuration
 
 > **Important:** This process can cause permanent system and user locks if not executed correctly. Keep a terminal with administrator permissions open during the process to avoid any irreparable error. It is recommended to first test the integration with `sudo` authentication to avoid being locked out of the system.
