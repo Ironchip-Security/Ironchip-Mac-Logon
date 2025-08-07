@@ -47,8 +47,8 @@ This PAM module integrates Ironchip Multi-Factor Authentication (MFA) into the m
 Download the latest Ironchip PAM module for macOS (`.so` file):
 
 <p align="left">
-  <a href="https://github.com/Ironchip-Security/Ironchip-Mac-Logon/releases/latest/download/pam_ironchip_auth.so">
-    <img alt="Download Ironchip Module" src="https://custom-icon-badges.demolab.com/badge/-Download%20Module-blue?style=for-the-badge&logo=download&logoColor=white">
+  <a href="https://github.com/Ironchip-Security/Ironchip-Mac-Logon/releases/latest/download/pam_ironchip_auth_all.so">
+    <img alt="Download Ironchip Module" src="https://custom-icon-badges.demolab.com/badge/-Download%20Module%20macOS-blue?style=for-the-badge&logo=download&logoColor=white">
   </a>
 </p>
 
